@@ -14,7 +14,7 @@ export function Sidebar({ email, logout }: { email: string; logout: () => Promis
   <img
     src={brand.logoMark}
     alt="Cutlog"
-    className="h-16 w-auto object-contain"
+    className="h-20 w-auto object-contain"
   />
 </div>
       <nav className="flex flex-1 flex-col gap-1">
