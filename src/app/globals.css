@@ -1,0 +1,18 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+@theme inline {
+  --color-bg: var(--bg); --color-surface: var(--surface); --color-border: var(--border);
+  --color-fg: var(--fg); --color-muted: var(--muted);
+  --color-brand: var(--brand); --color-brand-fg: var(--brand-fg);
+  --color-success: var(--success); --color-warning: var(--warning); --color-danger: var(--danger);
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+}
+:root { --bg:#f6f7f9; --surface:#fff; --border:#e5e7eb; --fg:#0e1520; --muted:#667085; --brand-fg:#fff; --success:#15803d; --warning:#b45309; --danger:#b91c1c; }
+.dark { --bg:#080c12; --surface:#0f1620; --border:#1b2633; --fg:#e8edf3; --muted:#8895a7; --success:#2ee59d; --warning:#f4b740; --danger:#f2706d; }
+body { background: var(--bg); color: var(--fg); font-family: var(--font-sans); -webkit-font-smoothing: antialiased; }
+:focus-visible { outline: 2px solid var(--brand); outline-offset: 2px; }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
+.num { font-variant-numeric: tabular-nums; letter-spacing: -0.02em; }
+.dark { color-scheme: dark; }
+@keyframes rise { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+.rise { animation: rise .35s ease-out both; }
