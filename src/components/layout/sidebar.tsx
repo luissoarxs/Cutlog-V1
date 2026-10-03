@@ -10,7 +10,7 @@ export function Sidebar({ email, logout }: { email: string; logout: () => Promis
   const path = usePathname();
   return (
     <aside className="fixed inset-y-0 left-0 hidden w-64 flex-col border-r border-border bg-surface p-4 md:flex">
-      <div className="mb-8 flex items-center px-2 pt-2">
+<div className="mb-8 flex items-center justify-center pt-2">
   <img
     src={brand.logoMark}
     alt="Cutlog"
