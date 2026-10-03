@@ -10,14 +10,13 @@ export function Sidebar({ email, logout }: { email: string; logout: () => Promis
   const path = usePathname();
   return (
     <aside className="fixed inset-y-0 left-0 hidden w-64 flex-col border-r border-border bg-surface p-4 md:flex">
-      <div className="mb-8 flex items-center gap-3 px-2 pt-2">
-        <img
-  src={brand.logoMark}
-  alt="Cutlog"
-  className="h-10 w-auto object-contain"
-/>
-        <span className="text-lg font-semibold">{brand.name}</span>
-      </div>
+      <div className="mb-8 flex items-center px-2 pt-2">
+  <img
+    src={brand.logoMark}
+    alt="Cutlog"
+    className="h-16 w-auto object-contain"
+  />
+</div>
       <nav className="flex flex-1 flex-col gap-1">
         {nav.map(({ href, label, icon: Icon }) => {
           const active = path.startsWith(href);
