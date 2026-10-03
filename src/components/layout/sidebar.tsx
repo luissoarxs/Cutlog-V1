@@ -11,7 +11,11 @@ export function Sidebar({ email, logout }: { email: string; logout: () => Promis
   return (
     <aside className="fixed inset-y-0 left-0 hidden w-64 flex-col border-r border-border bg-surface p-4 md:flex">
       <div className="mb-8 flex items-center gap-3 px-2 pt-2">
-        <span className="grid size-9 place-items-center rounded-xl bg-brand font-semibold text-brand-fg">{brand.logoMark}</span>
+        <img
+  src={brand.logoMark}
+  alt="Cutlog"
+  className="h-10 w-auto object-contain"
+/>
         <span className="text-lg font-semibold">{brand.name}</span>
       </div>
       <nav className="flex flex-1 flex-col gap-1">

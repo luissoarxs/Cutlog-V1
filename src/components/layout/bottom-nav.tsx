@@ -11,7 +11,11 @@ export function MobileChrome() {
     <>
       <header className="sticky top-0 z-20 flex h-14 items-center justify-between border-b border-border bg-surface/90 px-4 backdrop-blur md:hidden">
         <span className="flex items-center gap-2 font-semibold">
-          <span className="grid size-7 place-items-center rounded-lg bg-brand text-sm text-brand-fg">{brand.logoMark}</span>{brand.name}
+          <img
+  src={brand.logoMark}
+  alt="Cutlog"
+  className="h-10 w-auto object-contain"
+/>
         </span>
         <Link href="/configuracoes" aria-label="Configurações" className="grid size-10 place-items-center text-muted"><Settings className="size-5" /></Link>
       </header>

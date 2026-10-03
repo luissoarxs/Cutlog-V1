@@ -8,7 +8,11 @@ export default async function LoginPage({ searchParams }: { searchParams: Promis
     <main className="grid min-h-dvh place-items-center px-5">
       <form action={login} className="w-full max-w-sm rounded-2xl border border-border bg-surface p-7">
         <div className="mb-8 flex items-center gap-3">
-          <span className="grid size-10 place-items-center rounded-xl bg-brand text-lg font-semibold text-brand-fg">{brand.logoMark}</span>
+          <img
+  src={brand.logoMark}
+  alt="Cutlog"
+  className="h-10 w-auto object-contain"
+/>
           <div>
             <h1 className="text-xl font-semibold leading-tight">{brand.name}</h1>
             <p className="text-sm text-muted">Entre para ver seu painel.</p>
