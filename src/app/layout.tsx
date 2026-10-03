@@ -4,7 +4,6 @@ import { ThemeProvider } from "next-themes";
 import { Toaster } from "sonner";
 import { brand } from "@/config/brand";
 import "./globals.css";
-
 export const metadata: Metadata = {
   title: brand.name,
   description: brand.tagline,
