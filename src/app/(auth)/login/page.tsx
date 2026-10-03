@@ -8,8 +8,8 @@ export default async function LoginPage({ searchParams }: { searchParams: Promis
     <main className="grid min-h-dvh place-items-center px-5">
       <form action={login} className="w-full max-w-sm rounded-2xl border border-border bg-surface p-7">
         <div className="mb-8 flex items-center gap-3">
-          <img
-  src={brand.logoMark}
+      <img
+  src="/cutlog-logo.png"
   alt="Cutlog"
   className="h-10 w-auto object-contain"
 />

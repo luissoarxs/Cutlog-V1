@@ -1,8 +1,7 @@
-// Único lugar para trocar nome, logo e cor principal.
 export const brand = {
   name: "Cutlog",
   tagline: "Seu painel de edição",
-  owner: "Luís",
-  logoMark: "/cutlog-logo.png", // troque por <img> quando tiver logo
+  owner: "Luis",
+  logoMark: "/cutlog-logo.png",
   colors: { light: "#1d4ed8", dark: "#3b82f6" },
 } as const;
