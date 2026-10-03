@@ -14,9 +14,10 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="pt-BR" suppressHydrationWarning className={GeistSans.variable}>
-      <head>
-        <style>{`:root{--brand:${brand.colors.light}}.dark{--brand:${brand.colors.dark}}`}</style>
-      </head>
+     <head>
+  <link rel="icon" href="/favicon.png" />
+  <style>{`:root{--brand:${brand.colors.light}}.dark{--brand:${brand.colors.dark}}`}</style>
+</head>
       <body>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           {children}
